@@ -3,6 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import {
   AlertCircle,
   Eye,
+  FileText,
   MessageSquareText,
   PackageOpen,
   RotateCcw,
@@ -11,6 +12,17 @@ import {
 import API_URL, { getImageUrl } from "../components/config/config";
 
 import ShopLayout from "../components/ShopLayout";
+
+const productPdfs = [
+  {
+    label: "Pages 1-30",
+    href: "/pdfs/1-30pages%20pdf%20.pdf",
+  },
+  {
+    label: "Pages 30-60",
+    href: "/pdfs/30-60pages%20pdf%20.pdf",
+  },
+];
 
 const Products = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -292,6 +304,38 @@ const Products = () => {
       onReset={resetFilters}
       showFilters
     >
+      <section
+        aria-labelledby="product-pdf-heading"
+        className="mb-7 flex flex-col gap-4 rounded-2xl border border-[#241611]/10 bg-[#f5efe3]/50 p-5 sm:flex-row sm:items-center sm:justify-between"
+      >
+        <div>
+          <h2
+            id="product-pdf-heading"
+            className="font-serif text-lg font-semibold text-[#241611]"
+          >
+            Product Catalogue
+          </h2>
+          <p className="mt-1 text-sm text-[#8a7c6a]">
+            View our product catalogue PDFs.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-2 sm:flex-row">
+          {productPdfs.map(({ label, href }) => (
+            <a
+              key={href}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-[#241611] px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-[#c9a227]"
+            >
+              <FileText size={16} />
+              Show Product PDF ({label})
+            </a>
+          ))}
+        </div>
+      </section>
+
       {!loading && !error && (
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-7">
           <div>

@@ -13,7 +13,6 @@ import {
   Sparkles,
 } from "lucide-react";
 
-import Header from "../components/Header/Header";
 import PageHero from "../components/PageHero/PageHero";
 import "../components/PageHero/PageSections.css";
 
@@ -164,7 +163,6 @@ const Faq = () => {
 
   return (
     <>
-      <Header disableScrollColor />
 
       <main>
         <PageHero

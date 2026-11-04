@@ -22,7 +22,6 @@ import {
   AlertCircle,
 } from "lucide-react";
 
-import Header from "../components/Header/Header";
 import PageHero from "../components/PageHero/PageHero";
 import "../components/PageHero/PageSections.css";
 
@@ -744,7 +743,6 @@ const PrivacyAndPolicy = () => {
 
   return (
     <>
-      <Header disableScrollColor />
 
       <main>
         <PageHero

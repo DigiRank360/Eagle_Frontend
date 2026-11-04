@@ -1,7 +1,9 @@
 .page-hero {
   position: relative;
   width: 100%;
-  min-height: 340px;
+  min-height: 400px;
+  box-sizing: border-box;
+  padding-top: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -32,7 +34,7 @@
 .page-hero-content {
   position: relative;
   z-index: 2;
-  padding: 110px 24px 40px;
+  padding: 32px 24px 48px;
   max-width: 720px;
 }
 
@@ -62,6 +64,6 @@
 }
 
 @media (max-width: 991px) {
-  .page-hero { min-height: 260px; }
-  .page-hero-content { padding: 92px 20px 30px; }
+  .page-hero { min-height: 320px; padding-top: 90px; }
+  .page-hero-content { padding: 24px 20px 36px; }
 }

@@ -11,7 +11,6 @@ import {
   ArrowRight,
 } from "lucide-react";
 
-import Header from "../Header/Header";
 import PageHero from "../PageHero/PageHero";
 import "../PageHero/PageSections.css";
 
@@ -88,7 +87,6 @@ const About = () => {
 
   return (
     <>
-      <Header disableScrollColor />
 
       <main>
         <PageHero

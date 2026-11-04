@@ -10,7 +10,6 @@ import {
   Leaf,
 } from "lucide-react";
 import API_URL, { getImageUrl } from "../components/config/config";
-import Header from "../components/Header/Header";
 import PageHero from "../components/PageHero/PageHero";
 import "../components/PageHero/PageSections.css";
 
@@ -76,7 +75,6 @@ const PropertyDetails = () => {
   if (loading) {
     return (
       <>
-        <Header disableScrollColor />
 
         <main>
           <PageHero
@@ -117,7 +115,6 @@ const PropertyDetails = () => {
   if (!property) {
     return (
       <>
-        <Header disableScrollColor />
 
         <main>
           <PageHero
@@ -168,7 +165,6 @@ const PropertyDetails = () => {
 
   return (
     <>
-      <Header disableScrollColor />
 
       <main>
         <PageHero
