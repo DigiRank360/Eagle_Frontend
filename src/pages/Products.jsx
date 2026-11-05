@@ -16,11 +16,11 @@ import ShopLayout from "../components/ShopLayout";
 const productPdfs = [
   {
     label: "Pages 1-30",
-    href: "/pdfs/1-30pages%20pdf%20.pdf",
+    href: "https://drive.google.com/file/d/1VKFGd69VtIbNA1qUKXRzXTAh6DMlCCWa/view?usp=drive_link",
   },
   {
     label: "Pages 30-60",
-    href: "/pdfs/30-60pages%20pdf%20.pdf",
+    href: "https://drive.google.com/file/d/1yvmbaNgUTYeEYewu9S6TTi_mMydPNouZ/view?usp=drive_link",
   },
 ];
 
